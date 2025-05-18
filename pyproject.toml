@@ -1,0 +1,19 @@
+[project]
+name = "project-name"
+version = "0.1.0"
+description = "My PII detection project"
+readme = "README.md"
+authors = [
+    { name = "Alex Lee", email = "ajlee3141@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "gliner>=0.2.19",
+]
+
+[project.scripts]
+project-name = "project_name:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
